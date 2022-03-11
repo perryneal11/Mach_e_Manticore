@@ -1,0 +1,36 @@
+@mixin album-art-size() {
+    $calc-width: $master-width / 2.954;
+    $calc-height: ($master-height - 75px)  / 1.8461;
+    @if $calc-width <= $calc-height {
+        $size: $calc-width + ($calc-width / 6.5);
+        @include size($size);
+        @include transform(translateY(1%));
+    } @else {
+        $size: $calc-height + ($calc-height / 6.5);
+        @include size($size);
+        @include transform(translateY(1%));
+    }
+}
+
+.album-art {
+    display: inline;
+    
+    margin: 0px 0px 0px 0px;
+    height: 165px;
+    width: 165px;
+    
+    border-radius: 4px;
+
+    img {
+        width: 100%;
+    }
+
+    div {
+        height: 165px;
+        width: 165px;
+    }
+}
+
+.static-icon {
+    @include size(100%);
+}

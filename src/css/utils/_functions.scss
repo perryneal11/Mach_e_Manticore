@@ -1,0 +1,12 @@
+@function color($color, $color-variant: null) {
+    @if ($color-variant != null) {
+        @return map-get(map-get($colors, $color), $color-variant);
+    } @else {
+        $color-key: map-get($colors, $color);
+        @if ($color-key != null) {
+            @return $color-key;
+        } @else {
+            @return $color;
+        }
+    }
+}

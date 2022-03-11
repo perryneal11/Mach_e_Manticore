@@ -1,0 +1,52 @@
+.hscrollmenu {
+    height: 766px;
+    width: 800px;
+    position: absolute;
+    top: 320px;
+    z-index: 1001;
+    padding: (calc(#{$master-height} / 21.6) -50) 0px 0 0px;
+    background: linear-gradient(0.32deg, #D4D4DC 0%, #F4F3FC 100%);
+
+
+    @include display(flex);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include align-content(flex-start);
+}
+
+$menu-width: $master-width;
+$box-width-3: ($menu-width * 0.3);
+$margin-size-3: ((($menu-width) - (($box-width-3) * 3)) / 3);
+$calc-width-3: (($box-width-3) - (($margin-size-3) / 3));
+
+$box-width-2: (($menu-width) * 0.45);
+$margin-size-2: ((($menu-width) - (($box-width-2) * 2)) / 2);
+$calc-width-2: (($box-width-2) - (($margin-size-2) / 2));
+
+$box-width-1: (($menu-width) * 0.9);
+$margin-size-1: ((($menu-width) - (($box-width-1) * 1)) / 1);
+$calc-width-1: (($box-width-1) - (($margin-size-1) / 1));
+
+@mixin h-scroll-item-per-line() {
+    @if $master-width >=800 {
+        width: ($calc-width-3);
+        margin-left: ($margin-size-3);
+        margin-bottom: ($margin-size-3);
+        /*height: ((($calc-width-3)) * 0.78);*/
+        height: 270px;
+    } @else if $master-width >=480 {
+        width: ($calc-width-2);
+        margin-left: ($margin-size-2);
+        margin-bottom: ($margin-size-2);
+        height: ((($calc-width-2)) * 0.78);
+    } @else {
+        width: ($calc-width-1);
+        margin-left: ( $margin-size-1);
+        margin-bottom: ($margin-size-1);
+        height: ((($calc-width-1)) * 0.78);
+    }
+}
+.hscrollmenu .hscrollmenu-block {
+    @include h-scroll-item-per-line();
+    font-size: 33px;  
+}

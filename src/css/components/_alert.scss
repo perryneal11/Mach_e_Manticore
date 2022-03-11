@@ -1,0 +1,165 @@
+.alertOverlay {
+    position          : fixed;
+    top               : 0;
+    left              : 0;
+    right             : 0;
+    bottom            : 0;
+    width: $master-width;
+    margin: 25px;
+    z-index:1001;
+}
+
+.alertModal {
+    position: absolute;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    overflow: auto;
+    -webkit-overflow-scrolling: 'touch';
+    border-radius: 4px;
+    outline: none;
+    padding: 0px;
+    width: 100%;
+    height: 45%;
+    overflow: visible;
+
+  }
+
+.alert-title {
+    text-align: center;
+
+    p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.alert-top {
+    display: block;
+    padding: 0px;
+    max-height: 200px;
+
+    h4 {
+        overflow: scroll;
+    }
+
+    img {
+        min-width: calc((#{$master-height} - 75px) * 0.3);
+
+        width: calc((#{$master-height} - 75px) * 0.3);
+        height: calc((#{$master-height} - 75px) * 0.3);
+    }
+}
+
+.alert-icon{
+    width: 50%;
+    height: calc((#{$master-height} - 75px) / 2);
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
+    .icon{
+        max-height:75%;
+        max-width: 75%;
+        height: auto;
+        width: auto;
+    }
+    #Layer_1 {
+        max-height:75%;
+        max-width: 75%;
+        height: auto;
+        width: 75%;
+    }
+}
+
+.alert-text-fields{
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    height: calc((#{$master-height} - 75px) / 2);
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.alert-buttons{
+    @include display(flex);
+    @include justify-content(space-around);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include align-items(stretch);
+    padding: 15px;
+
+}
+
+.alert-button-1 {
+    height: 75px;
+    width: 100%;
+    text-align: center;
+
+    border-width: 0.154px;
+    border-style: solid;
+    margin: 15px;
+    //align-self: flex-start;
+    border-radius: 37px;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    height: 74px;
+    width: 25%;
+    margin: 0px !important;
+
+    border: none;
+    background-color: rgba(61,154,255,0);
+    box-shadow: 0 4px 9px 0 rgba(0,0,0,0.45), 0 -4px 8px 0 rgba(61,154,255,0.35);
+}
+
+.alert-button-2 {
+    height: 75px;
+    width: 45%;
+    text-align: center;
+    border-radius: 37px;
+    border-width: 0.154px;
+    border-style: solid;
+    margin: 15px;
+    border-radius: 37px;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    height: 74px;
+    width: 25%;
+    margin: 0px !important;
+    border: none;
+    background-color: rgba(61,154,255,0);
+    box-shadow: 0 4px 9px 0 rgba(0,0,0,0.45), 0 -4px 8px 0 rgba(61,154,255,0.35);
+}
+
+.alert-button-3 {
+    //height: 123.333333334px;
+    height: 75px;
+    width: 29%;
+    text-align: center;
+    border-radius: 8px;
+    border-width: 0.154px;
+    border-style: solid;
+    margin: 15px;
+
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+}
+
+.alert-button-4 {
+    height: 50px;
+    width: 45%;
+    text-align: center;
+    border-radius: 8px;
+    border-width: 0.154px;
+    border-style: solid;
+    margin: 15px;
+
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+}

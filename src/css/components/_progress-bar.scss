@@ -1,0 +1,15 @@
+/*** moved .progress-bar to base/_themes.scss ***/
+/*.progress-bar {
+    position: relative;
+    height: calc((#{$master-height} - 75px) / 6) ;
+
+    border-bottom: 2px solid;
+
+    &__progress {
+        position: absolute;
+        @include calc('height', '100% + 2px');
+        background: color($secondary-accent-color);
+    }
+}
+*/
+/*** moved .progress-bar to base/_themes.scss ***/

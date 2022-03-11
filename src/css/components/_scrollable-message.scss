@@ -1,0 +1,158 @@
+/*
+.scrollableMessageOverlay {
+    position          : fixed;
+    top               : 0;
+    left              : 0;
+    right             : 0;
+    bottom            : 0;
+    background-color   : rgba(0, 0, 0, 0.75);
+    width: $master-width;
+    height: $master-height;
+    margin: 25px;
+    z-index:1001;
+}
+*/
+
+.scrollableMessageOverlay {
+    position: fixed;
+    top: 500px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    width: 700px;
+    height: 550px;
+    margin: 25px;
+    z-index: 1001;
+
+    &__dark-theme {
+        background: linear-gradient(0deg, #0F1318 0%, #1A1F26 100%);
+        color: #9FA3B5;
+        scrollbar-color: #9FA3B5 #1A1F26;
+    }
+
+    &__light-theme {
+        /*background: #E4E4EC;*/
+        background: linear-gradient(0.32deg, #D4D4DC 40%, #F4F3FC 100%);
+        color: #44516F;
+        scrollbar-color: #44516F #F4F3FC;
+    }
+}
+
+.scrollableMessageModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    @include transform(translate(-50%, -50%));
+    /*border: 1px solid #ccc;*/
+    /*overflow: auto;*/
+    /*-webkit-overflow-scrolling: 'touch';*/
+    /*border-radius: 4px;*/
+    outline: none;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.scrollableMessage{
+    height: 100%;
+    @include display(flex);
+    @include flex-direction(column);
+}
+
+.scrollableMessage-top {
+    /*display: flex;*/
+    /*padding: 30px;*/
+    overflow: auto;
+    /*max-height: calc((#{$master-height} - 75px) * 0.6);*/
+    scrollbar-color: light;
+}
+
+.scrollable-message-text {
+    /*@include display(flex);
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);*/
+    /*height: calc((#{$master-height} - 75px) / 2);
+    width: 50%;
+    text-align: center;*/
+    text-align: left;
+    padding: 10px;
+    font-size: 33px;
+    line-height: 38px;
+    letter-spacing: 0;
+}
+
+.scrollableMessage-buttons{
+    @include display(flex);
+    @include justify-content(space-around);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include align-items(stretch);
+    padding: 15px;
+}
+
+.scrollableMessage-button-1 {
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    margin: 15px;
+    //align-self: flex-start;
+
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    border-radius: 80px;
+    background-color: rgba(204, 221, 255, 0);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.9), 0 -4px 7px 0 rgba(204, 221, 255, 0.25);
+    border: none;
+}
+
+.scrollableMessage-button-2 {
+    height: 75px;
+    width: 45%;
+    text-align: center;
+    margin: 15px;
+
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    border-radius: 80px;
+    background-color: rgba(204, 221, 255, 0);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.9), 0 -4px 7px 0 rgba(204, 221, 255, 0.25);
+    border: none;
+}
+
+.scrollableMessage-button-3 {
+    //height: 123.333333334px;
+    height: 75px;
+    width: 29%;
+    text-align: center;
+    margin: 15px;
+
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    border-radius: 80px;
+    background-color: rgba(204, 221, 255, 0);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.9), 0 -4px 7px 0 rgba(204, 221, 255, 0.25);
+    border: none;
+}
+
+.scrollableMessage-button-4 {
+    height: 50px;
+    width: 45%;
+    text-align: center;
+    margin: 15px;
+
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    border-radius: 80px;
+    background-color: rgba(204, 221, 255, 0);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.9), 0 -4px 7px 0 rgba(204, 221, 255, 0.25);
+    border: none;
+}

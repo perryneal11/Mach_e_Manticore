@@ -1,0 +1,923 @@
+.dark-theme {
+
+    .dropdown{
+        height: 74px;
+        z-index: 1000;
+        width: 574px;
+        position: relative;
+        left: 150px;
+        z-index: 1000;
+        border-radius: 48px;
+        background-color: rgba(204,221,255,0);
+        box-shadow: 0 7px 14px 4px rgba(0,0,0,0.6), 0 -4px 18px 0 rgba(204,221,255,0.3);
+
+    }
+
+    .dropdown-content {
+        display: none;
+        height: 350px;
+        width: 570px;
+        border-radius: 37px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        background-color: #1A1F26;
+        box-shadow: -7px 7px 11px 0 rgba(0,0,0,0.5), 7px 7px 11px 0 rgba(204,221,255,0.3);
+    }
+
+    .dropdown:hover .dropdown-content{display:block}
+
+    .app-body {
+        background: color($primary-color);
+        height: 1060px;
+    }
+
+    .app__header {
+        height: 260px;
+        width: 800px;
+
+    }
+
+    .alertModal {
+        background-color: #1A1F27;
+        box-shadow: inset 0 -1px 0 0 #333D53 , 0 8px 15px 0 rgba(0,0,0,0.5);
+
+    }
+
+    .app_header_gradient_block_media{
+        height: 482px;
+        width: 800px;
+        background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.08) 47.58%, #000000
+        100%, #000000
+        100%), radial-gradient(circle, #0C4380
+        0%, #0B3A6E
+        37.43%, #0E2E52
+        100%);
+    }
+
+    .app_header_phone_radio_nav_wrap{
+        display: inherit;
+    }
+
+    .status_bar{
+        background: linear-gradient(180deg, rgba(29,34,42,0) 0%, rgba(40,46,57,0.6) 63.87%, #282D39 100%);
+    }
+
+    .app_tray_app_header_icon_text {
+        /*color: #9fa3b5;*/
+        color: #c3cde5;
+    }
+
+    .app_tray_app_header_icon{
+        fill: #9fa3b5;
+    }
+
+    .t-small, .t-medium, .th-f-color {
+        color: #9fa3b5;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .app_header_greeting {
+        margin-top: 30px;
+        color: #9fa3b5;
+        font-size: 33px;
+    }
+
+    .arrow_format {
+        width: 50px;
+        height: 50px;
+        /*margin-top: 40px;*/
+        margin-bottom: -58px;
+        fill: #9fa3b5;
+    }
+
+    .status_bar_text_time{
+        color: #9FA3B5;
+        font-family: 'Antenna Cond Regular';
+        font-size: 33px;
+        letter-spacing: 0;
+        line-height: 59px;
+        text-align: right;
+        display: inline;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .status_bar_text_temp{
+ 
+        color: #77767f;
+        font-family: 'Antenna Cond Regular';
+        font-size: 33px;
+        letter-spacing: 0;
+        line-height: 59px;
+        text-align: right;
+        display: inline;
+        float: right;
+        margin-top: -40px;
+        margin-right: 10px;
+    }
+
+    .status_bar_icon{
+        height: 30px;
+        width: 30px;
+        background-color: $primary-color;
+        fill: #767676;
+        margin-left: 5px;
+    } 
+
+    .status_bar_icon_battery_charging{
+        height: 30px;
+        width: 30px;
+        background-color: $primary-color;
+        fill: #767676;
+        margin-left: 550px;
+        margin-top: 50px;
+    }
+
+    .app_tray_button_round{
+        height: 55px;
+        width: 55px;
+        border-radius: 49.5px;
+        background-color: rgba(204,221,255,0);
+        margin-left: 400px;
+        margin-right: -400px;
+        margin-top: 20px;
+        box-shadow: 0 -4px 9px 0 rgba(204,221,255,0.1), 0 4px 9px 0 #000000
+        , 3px 0 12px 0 rgba(77,136,255,0.1), -3px 0 12px 0 rgba(255,90,0,0.05);
+        display: inline-block;
+        z-index: 100;
+        position: absolute;
+        
+    }
+
+    .app_tray_drawer_handle {
+        height: 9px;
+        width: 800px;
+        background-color: rgba(0,0,0,0);
+        box-shadow: 0 3px 13px 0 #000000, 0 10px 27px 3px rgba(0,0,0,0.9);
+        left: 75px;
+        bottom: 25px;
+        z-index: 2000;
+        position: absolute;
+    }
+
+    .app_tray_drawer_handle {
+        height: 9px;
+        width: 800px;
+        background-color: rgba(0,0,0,0);
+        box-shadow: 0 3px 13px 0 #000000, 0 10px 27px 3px rgba(0,0,0,0.9);
+        left: 0px;
+        bottom: 25px;
+        z-index: 2000;
+        position: absolute;
+    }
+
+    .app_tray_drawer_handle_indicator {
+        height: 6px;
+        width: 84px;
+        border-radius: 3.5px;
+        background-color: rgba(204,221,255,0.15);
+        box-shadow: inset 0 5px 5px 0 rgba(0,0,0,0.3), 0 1px 0 0 rgba(204,221,255,0.3);   
+        left: 383px;
+        bottom: 50px;
+        z-index: 2001;
+        position: absolute;
+    }
+
+    .app_tray_drawer_handle_indicator_alert {
+        height: 6px;
+        width: 84px;
+        border-radius: 3.5px;
+        background-color: rgba(204,221,255,0.15);
+        box-shadow: inset 0 5px 5px 0 rgba(0,0,0,0.3), 0 1px 0 0 rgba(204,221,255,0.3);   
+        left: 383px;
+        bottom: 50px;
+        z-index: 2001;
+        position: absolute;
+    }
+
+    .app_tray_drawer_gradients {
+        height: 52px;
+        width: 800px;
+        background: linear-gradient(180deg, rgba(29,34,42,0) 0%, rgba(40,45,57,0.6) 63.87%, #282D39 100%);
+
+        bottom: 34px;
+        z-index: 2000;
+        position: absolute;
+        
+    }
+    .app_tray_drawer_gradients_alert {
+        height: 52px;
+        width: 800px;
+        background: linear-gradient(180deg, rgba(29,34,42,0) 0%, rgba(40,45,57,0.6) 63.87%, #282D39 100%);
+
+        bottom: 34px;
+        z-index: 2000;
+        position: absolute;
+        top: 450px;
+    }
+
+    .dark_dots{
+        margin-left: 400px;
+        margin-right: -400px;
+        margin-top: 20px;
+        height: 55px;
+        width: 55px;
+        z-index: 101;
+        position: absolute;
+        border-radius: 49.5px;
+    }
+
+    .control-bar {
+                
+        margin-top: -30px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 0 15px 25px 5px rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.65);
+        height: 80px;
+        /*width: 680px;*/
+        width: 700px;
+        z-index: 1000;
+    }
+
+    
+    /*** Removed .static-icon and svg ***
+     *** Added .static-icon to components/_control-bar.scss ***/
+    /*
+    .static-icon {
+        margin-right: -200px;
+        margin-top: -200px;
+        margin-left: 480px;
+    }
+
+    .static-icon svg {
+        height: 165px;
+        width: 165px;
+        margin-top: -80px;
+        margin-right: -150px;
+
+    }
+    */
+
+    .media-metadata {
+        display: inline;
+        text-align: left;
+    }
+
+    .media-show-line{
+        height: 38px;
+        width: 369px;
+        color: #C3CDE5;
+        font-family: 'Antenna Cond Medium';
+        font-size: 33px;
+        letter-spacing: 0;
+        line-height: 38px;
+    }
+
+    .menu-item-div{
+        height: 40px;
+        width: 640px;
+        margin-bottom: 28px;
+        margin-left: 80px;
+        
+    }
+
+    .menu-item-divider{
+        height: 2px;
+        width: 680px;
+        margin-top: 15px;
+        background-color: rgba(68,81,111,0.6);
+    }
+
+    .vscrollmenu-item{
+        display: block;
+        height: 40px;
+        width: 640px;
+        margin-bottom: 28px;
+        margin-left: 0px;
+    }
+
+    .vscrollmenu-item__name{
+        height: 40px;
+        width: 40px;
+
+        .menu-item{
+            height: 38px;
+            width: 560.21px;
+            color: hsl(229, 13%, 67%);
+            font-family: 'Antenna Cond Regular';
+            font-size: 33px;
+            letter-spacing: 0;
+            line-height: 38px;
+        }
+
+
+    }
+
+    .hscrollmenu,
+    .double-graphic-with-softbuttons-template,
+    .large-graphic-only-template,
+    .large-graphic-with-softbuttons-template,
+    .tiles-only-template,
+    .text-buttons-only-template {
+        /*background: linear-gradient(180deg, #000000 0%, rgba(0,0,0,0) 100%);*/
+        background: linear-gradient(0deg, #0F1318 0%, #1A1F26 100%);
+        /*margin-top: 120px;*/
+    }
+
+    .th-f-color {
+        /*color: color($font-primary-color);*/
+        color: #9fa3b5;
+    }
+
+    .th-f-color-secondary {
+        /*color: color($font-secondary-color);*/
+        color: #c3cde5;
+    }
+
+    .th-f-color-alt {
+      /*color: color(white);*/
+      color: #969eab;
+    }
+
+    .th-b-color {
+        /*border-color: #333333;*/
+        border-color: transparent;
+    }
+
+    .th-b-color-secondary {
+        border-color: color(white);
+    }
+
+    .th-box-shadow {
+        box-shadow: 0 20px 40px 0 rgba(color(black), 0.75);
+    }
+
+    .th-bb-color {
+        border-bottom-color: color(asphalt);
+        
+    }
+
+    .th-bg-color {
+        background: linear-gradient(180deg, #14181E 0%, #1A1F26 100%);
+        //box-shadow: 0 15px 25px 5px rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.65);
+
+    }
+
+    .th-f-accent-color {
+        color: color($secondary-accent-color);
+    }
+
+    .th-soft-buttons {
+        border-color: color(slate);
+    }
+
+    .th-soft-buttons:active {
+        background-color: color(tire);
+    }
+
+    .svg-wrap svg path, .svg-wrap svg polygon {
+        fill: color($accent-color);
+    }
+
+    .svg-wrap-secondary svg path, .svg-wrap-secondary svg polygon {
+        fill: color($font-secondary-color);
+    }
+
+    .svg-fill-important {
+        fill: color($accent-color) !important;
+    }
+
+    .svg-stroke {
+        color: color($accent-color) !important;
+        stroke: color($accent-color) !important;
+    }
+    
+    .th-tile-background-color {
+        /*background-color: #111111;*/
+        /*background: linear-gradient(0deg, #0F1318 0%, #1A1F26 100%);*/
+        background: transparent;
+    }
+
+    .th-nav-background-color {
+        background-color: #121212;
+    }
+
+    .th-divider-color {
+        background-color: #FFFFFF;
+    }
+
+    //.progress-bar__progress{
+    //    width: 355px;
+    //    height: 17px;   
+    //}
+
+    .progress-bar {
+        //bottom: 0px;
+        position: absolute;
+        left:0px;
+        top: 0px;
+        width: 355px;
+        height: 17px;
+        //margin-top: 280px;
+        margin-top: 150px;
+
+        border-top: 1px solid rgba(0,0,0,0.2);
+        border-top: 1px solid rgba(0,0,0,0.2);
+        border-left: 1px solid rgba(255,255,255,.5);
+        border-right: 1px solid rgba(255,255,255,.5);
+        background-color: rgba(61,154,255,0);
+        box-shadow: 0 -4px 9px 0 rgba(0,0,0,0.55), 0 4px 6px 0 rgba(61,154,255,0.3);
+
+        &__progress {
+            @include calc('height', '100% + 2px');
+            background: linear-gradient(45deg, #010c1a 0%, #0a458d 30%, #1971db 50%, #e0dcdc 100%);
+            box-shadow: 0 4px 9px 0 rgba(0,0,0,0.45), 0 -4px 8px 0 rgba(61,154,255,0.35);
+        };
+    }
+
+    .media-track__time{
+        top: 180px;
+        left: -140px;
+    }
+
+    .media-track {
+        flex-direction: row;
+
+    }
+
+    .end-time{
+        margin-left: 180px;
+    }
+
+    .album-art{
+        margin-top: 30px;
+        margin-left: 140px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+
+    }
+    .app-icon {
+        flex: 0;
+    }
+
+    .app__header {
+        justify-content: left;
+    }
+
+
+
+    /*** moved .hscrollmenu-item here from .hscrollmenu-item.scss ***/
+    .hscrollmenu-item {
+        display: block;
+        height:100%;
+        text-align: center;
+        text-decoration: none;
+        color: color(white);
+        /*border: 2px solid;*/
+        border: 2px solid transparent;
+        position: relative;
+    
+        &__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*@include size(50%);*/
+            @include size(100px);
+            margin: 16% auto 12px;
+    
+            /*border-radius: 4px;*/
+            border-radius: 50%;
+            background-color: rgba(204,221,255,0);
+            box-shadow: 0 4px 12px 0 rgba(0,0,0,0.9), 0 -4px 9px 0 rgba(204,221,255,0.25);
+
+            &:active {
+                border: 1px solid rgba(0,0,0,0.3);
+                background-color: rgba(204,221,255,0);
+                box-shadow: 0 -4px 11px 0 rgba(0,0,0,0.7), 0 4px 7px 0 rgba(204,221,255,0.2);
+            }
+    
+            div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                svg {
+                    height: 100%;
+                }
+            }
+    
+            img {
+                /*width: 100%;*/
+                width: 50%;
+            }
+        }
+    
+        &__name {
+            position: absolute;
+            overflow: scroll;
+            scrollbar-width: none;
+            bottom: 0px;
+            width: 100%;
+            /* height: 23% */
+            height: 53%;
+            padding-top: 10px;
+        }
+    
+        &__header {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            height: 10%;
+        }
+    
+        &.with-icon {
+            .hscrollmenu-item__image {
+                @include size(50px);
+                margin: 50px auto;
+            }
+
+            .svg-wrap {
+                @include size(50px);
+            }
+
+            .t-small {
+                @include t-large();
+            }
+        }
+    
+        &__arrow {
+            float: right;
+            transform: translateY(-166%);
+            margin-right: 10px;
+    
+            svg {
+                display: block;
+                width: 17px;
+                height: 44px;
+                margin: auto;
+            }
+        }
+    }
+    /*** moved .hscrollmenu-item here from .hscrollmenu-item.scss ***/
+}
+
+.light-theme {
+    .app-body {
+         background: linear-gradient(0.32deg, #D4D4DC 0%, #F4F3FC 100%)
+    }
+
+    .app__header {
+        height: 260px;
+        width: 800px;
+    }
+
+    .app_header_phone_radio_nav_wrap{
+        display: inherit;
+    }
+    
+    .status_bar{
+        background-color: $primary-color ;
+    }
+
+    .app_tray_app_header_icon_text {
+        color: #ffffff;
+
+    }
+
+    .app_tray_app_header_icon{
+        fill: #FFFFFF;
+    }
+
+
+    .t-small, .t-medium, .th-f-color {
+        color: #FFFFFF;
+        margin-top: 0px;
+    }
+
+    .status_bar_text_time{
+    
+        color: #44516f;
+        font-family: 'Antenna Cond Regular';
+        font-size: 33px;
+        letter-spacing: 0;
+        line-height: 59px;
+        text-align: right;
+        display: inline;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .status_bar_text_temp{
+        color: #767676;
+        font-family: 'Antenna Cond Regular';
+        font-size: 33px;
+        letter-spacing: 0;
+        line-height: 59px;
+        text-align: right;
+        display: inline;
+        float: right;
+        margin-top: -40px;
+        margin-right: 10px;
+
+    }
+
+    .app_header_greeting {
+        margin-top: 30px;
+        color: #a6d3ff;
+        font-size: 33px;
+    }
+
+
+    .arrow_format {
+        width: 50px;
+        height: 50px;
+        /*margin-top: 40px;*/
+        margin-bottom: -58px;
+        fill: #ffffff;
+    }
+
+    .status_bar_icon{
+        height: 30px;
+        width: 30px;
+        background-color: $primary-color;
+        fill: #767676;
+        margin-left: 5px;
+    } 
+
+    .status_bar_icon_battery_charging{
+        height: 30px;
+        width: 30px;
+        background-color: $primary-color;
+        fill: #767676;
+        margin-left: 550px;
+        margin-top: 50px;
+    }
+
+    .app_tray_button_round{
+        height: 55px;
+        width: 55px;
+        border-radius: 49.5px;
+        margin-left: 400px;
+        margin-right: -400px;
+        margin-top: 20px;
+        background-color: rgba(255,255,255,0);
+    box-shadow: 0 0 6px 0 #FFFFFF
+    , 0 -6px 12px 0 #FFFFFF
+    , 0 6px 15px 0 rgba(52,60,77,0.25), -3px 0 12px 0 rgba(77,136,255,0.2), 3px 0 12px 0 rgba(255,90,0,0.15);
+        display: inline-block;
+        z-index: 100;
+        position: absolute;
+        
+    }
+
+    .app_tray_drawer_handle {
+        height: 9px;
+        width: 800px;
+        background-color: rgba(0,0,0,0);
+        box-shadow: 0 3px 13px 0 #000000, 0 10px 27px 3px rgba(0,0,0,0.9);
+        left: 25px;
+        bottom: 25px;
+        z-index: 2000;
+        position: absolute;
+    }
+
+    .app_tray_drawer_handle_indicator {
+        height: 6px;
+        width: 84px;
+        border-radius: 3.5px;
+        background-color: #80858C;
+        box-shadow: inset 0 3px 5px 0 rgba(52,60,77,0.6), 0 1px 0 0 rgba(255,255,255,0.25);
+        left: 383px;
+        bottom: 50px;
+        z-index: 2001;
+        position: absolute;
+    }
+
+    .app_tray_drawer_gradients {
+        height: 52px;
+        width: 800px;
+        background: linear-gradient(180deg, rgba(246,244,250,0) 0%, rgba(255,255,255,0.5) 63.87%, rgba(255,255,255,0.9) 100%);
+        bottom: 34px;
+        z-index: 2000;
+        position: absolute;
+    }
+
+    .light_dots{
+        margin-left: 400px;
+        margin-right: -400px;
+        margin-top: 20px;
+        height: 55px;
+        width: 55px;
+        z-index: 90;
+        position: absolute;
+        border-radius: 49.5px;
+    }
+
+    .hscrollmenu,
+    .double-graphic-with-softbuttons-template,
+    .large-graphic-only-template,
+    .large-graphic-with-softbuttons-template,
+    .tiles-only-template,
+    .text-buttons-only-template {
+        /*background: linear-gradient(0.32deg, #D4D4DC 0%, #F4F3FC 100%);*/
+        background: linear-gradient(0.32deg, #D4D4DC 0%, #F4F3FC 100%);
+        /*margin-top: 120px;*/
+    }
+
+    .th-f-color {
+        /*color: color($font-primary-color);*/
+        color: #44516f;
+    }
+
+    .th-f-color-secondary {
+        /*color: color(steel);*/
+        color: #ffffff;
+    }
+
+    .th-f-color-alt {
+        /*color: color(black);*/
+        color: #a6d3ff;
+    }
+
+    .th-b-color {
+        /*border-color: #dddddd;*/
+        border-color: transparent;
+    }
+
+    .th-b-color-secondary {
+        border-color: color(black);
+    }
+
+    .th-box-shadow {
+        box-shadow: 0 20px 40px 0 rgba(color(black), 0.25);
+    }
+
+    .th-bb-color {
+        border-bottom-color: color(aluminum);
+    }
+
+    .th-bg-color {
+        background-color: color(white);
+    }
+
+    .th-f-accent-color {
+      color: color($secondary-accent-color);
+    }
+
+    .th-soft-buttons {
+        border-color: #919191;
+    }
+
+    .th-soft-buttons:active {
+        background-color: color(glass);
+    }
+    .svg-wrap svg path,
+    .svg-wrap svg polygon {
+        fill: color(black);
+    }
+
+    .svg-wrap-secondary svg path,
+    .svg-wrap-secondary svg polygon {
+        fill: color(steel);
+    }
+    
+    .svg-fill-important {
+        fill: color(black) !important;
+    }
+
+    .svg-stroke{
+        color: color(black) !important;
+        stroke: color(black) !important;
+    }
+
+    .th-tile-background-color {
+        /*background-color: #ffffff;*/
+        background-color: transparent;
+    }
+    
+    .th-nav-background-color {
+        background-color: #F7F8F9;
+    }
+
+    .th-divider-color {
+      background-color: #000000;
+    }
+
+    .progress-bar {
+        //bottom: 0px;
+        position: absolute;
+        left:0px;
+        top: 0px;
+        width: 355px;
+        height: 17px;
+        //margin-top: 280px;
+        margin-top: 150px;
+
+        border-top: 1px solid rgba(0,0,0,0.2);
+        border-top: 1px solid rgba(0,0,0,0.2);
+        border-left: 1px solid rgba(255,255,255,.5);
+        border-right: 1px solid rgba(255,255,255,.5);
+        background-color: rgba(61,154,255,0);
+        box-shadow: 0 -4px 9px 0 rgba(0,0,0,0.55), 0 4px 6px 0 rgba(61,154,255,0.3);
+
+        &__progress {
+            @include calc('height', '100% + 2px');
+            background: linear-gradient(45deg, #010c1a 0%, #0a458d 30%, #1971db 50%, #e0dcdc 100%);
+            box-shadow: 0 4px 9px 0 rgba(0,0,0,0.45), 0 -4px 8px 0 rgba(61,154,255,0.35);
+        };
+    }
+
+    /*** moved .hscrollmenu-item here from .hscrollmenu-item.scss ***/
+    .hscrollmenu-item {
+        display: block;
+        height:100%;
+        text-align: center;
+        text-decoration: none;
+        color: color(white);
+        /*border: 2px solid;*/
+        border: 2px solid transparent;
+        position: relative;
+
+        &__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*@include size(50%);*/
+            @include size(100px);
+            margin: 16% auto 12px;
+
+            /*border-radius: 4px;*/
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0);
+            box-shadow: 0 -7px 9px 0 rgba(255,255,255,0.6), 0 7px 9px 0 rgba(52,60,77,0.25), -3px 0 9px 0 rgba(77,136,255,0.1), 3px 0 9px 0 rgba(255,90,0,0.05);
+
+            &:active {
+                border: 0.87px solid rgba(52,60,77,0.2);
+                background-color: rgba(255,255,255,0);
+                box-shadow: 0 7px 9px 0 rgba(255,255,255,0.5), 0 -7px 9px 0 rgba(52,60,77,0.2), -3px 0 9px 0 rgba(77,136,255,0.1), 3px 0 9px 0 rgba(255,90,0,0.05);
+            }
+
+            div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                svg {
+                    height: 100%;
+                }
+            }
+
+            img {
+                /*width: 100%;*/
+                width: 50%;
+            }
+        }
+
+        &__name {
+            position: absolute;
+            overflow: scroll;
+            scrollbar-width: none;
+            bottom: 0px;
+            width: 100%;
+            height: 53%;
+            padding-top: 10px;
+        }
+
+        &__header {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            height: 10%;
+        }
+
+        &.with-icon {
+            .hscrollmenu-item__image {
+                @include size(50px);
+                margin: 50px auto;
+            }
+            .svg-wrap {
+                @include size(50px);
+            }
+            .t-small {
+                @include t-large();
+            }
+        }
+
+        &__arrow {
+            float: right;
+            transform: translateY(-166%);
+            margin-right: 10px;
+
+            svg {
+                display: block;
+                width: 17px;
+                height: 44px;
+                margin: auto;
+            }
+        }
+    }
+    /*** moved .hscrollmenu-item here from .hscrollmenu-item.scss ***/  
+}

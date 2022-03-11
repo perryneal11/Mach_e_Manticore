@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DB3448BD-55C4-48AE-BC1D-7750FFA91012</title>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#0F1318" offset="0%"></stop>
+            <stop stop-color="#1A1F26" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="27.2493347%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#1D222A" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#282E39" stop-opacity="0.6" offset="63.8724662%"></stop>
+            <stop stop-color="#282D39" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="0" y="0" width="55" height="55" rx="27.5"></rect>
+        <filter x="-40.9%" y="-37.3%" width="181.8%" height="174.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-3" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.352941176   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="3" dy="0" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.301960784   0 0 0 0 0.533333333   0 0 0 0 1  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter3" result="shadowBlurOuter3"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter3" in2="SourceAlpha" operator="out" result="shadowBlurOuter3"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feOffset dx="0" dy="-4" in="SourceAlpha" result="shadowOffsetOuter4"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter4" result="shadowBlurOuter4"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter4" in2="SourceAlpha" operator="out" result="shadowBlurOuter4"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.86746988   0 0 0 0 1  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter4" result="shadowMatrixOuter4"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter4"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Phase-A-Night" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AUD-06_AM_Keypad_Tuning_M1" transform="translate(-368.000000, -8.000000)">
+            <g id="Atoms/Background/N" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                <rect id="MainBackground/Night" x="0" y="0" width="800" height="1280"></rect>
+            </g>
+            <g id="Templates/Statusbar/N" transform="translate(0.000000, -1.000000)">
+                <g id="Atoms/Highlight/N" transform="translate(0.000000, 31.000000)" fill="url(#linearGradient-2)">
+                    <rect id="F2_P_M1/Drawer/Gradients/Handle/Statusbar/Highlight/N" x="0" y="0" width="800" height="60"></rect>
+                </g>
+                <g id="Components/Round/AppDrawer/OnDefaultBg/Normal/N" transform="translate(368.000000, 9.000000)">
+                    <g id="Atoms/Shape/Round/AppDrawer/N" transform="translate(5.000000, 5.000000)" fill-rule="nonzero">
+                        <g id="Button/Styles/RoundPill/OnDefaultBg/Normal/N">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <rect stroke-opacity="0.6" stroke="#000000" stroke-width="1" stroke-linejoin="square" fill-opacity="0" fill="#CCDDFF" fill-rule="evenodd" x="0.5" y="0.5" width="54" height="54" rx="27"></rect>
+                        </g>
+                    </g>
+                    <g id="Additional/Asset/Drawer/AppProfile/noProfile" fill="#C3CDE5">
+                        <path d="M22.5588235,34.366782 C24.4593328,34.366782 26,35.9175189 26,37.8304498 C26,39.7433807 24.4593328,41.2941176 22.5588235,41.2941176 C20.6583142,41.2941176 19.1176471,39.7433807 19.1176471,37.8304498 C19.1176471,35.9175189 20.6583142,34.366782 22.5588235,34.366782 Z M32.8823529,34.366782 C34.7828622,34.366782 36.3235294,35.9175189 36.3235294,37.8304498 C36.3235294,39.7433807 34.7828622,41.2941176 32.8823529,41.2941176 C30.9818437,41.2941176 29.4411765,39.7433807 29.4411765,37.8304498 C29.4411765,35.9175189 30.9818437,34.366782 32.8823529,34.366782 Z M43.2058824,34.366782 C45.1063916,34.366782 46.6470588,35.9175189 46.6470588,37.8304498 C46.6470588,39.7433807 45.1063916,41.2941176 43.2058824,41.2941176 C41.3053731,41.2941176 39.7647059,39.7433807 39.7647059,37.8304498 C39.7647059,35.9175189 41.3053731,34.366782 43.2058824,34.366782 Z M32.8823529,24.4705882 C34.7828622,24.4705882 36.3235294,26.0213251 36.3235294,27.9342561 C36.3235294,29.847187 34.7828622,31.3979239 32.8823529,31.3979239 C30.9818437,31.3979239 29.4411765,29.847187 29.4411765,27.9342561 C29.4411765,26.0213251 30.9818437,24.4705882 32.8823529,24.4705882 Z M43.2058824,24.4705882 C45.1063916,24.4705882 46.6470588,26.0213251 46.6470588,27.9342561 C46.6470588,29.847187 45.1063916,31.3979239 43.2058824,31.3979239 C41.3053731,31.3979239 39.7647059,29.847187 39.7647059,27.9342561 C39.7647059,26.0213251 41.3053731,24.4705882 43.2058824,24.4705882 Z M22.5588235,24.4705882 C24.4593328,24.4705882 26,26.0112554 26,27.9117647 C26,29.812274 24.4593328,31.3529412 22.5588235,31.3529412 C20.6583142,31.3529412 19.1176471,29.812274 19.1176471,27.9117647 C19.1176471,26.0112554 20.6583142,24.4705882 22.5588235,24.4705882 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

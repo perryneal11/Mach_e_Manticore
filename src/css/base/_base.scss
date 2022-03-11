@@ -1,0 +1,95 @@
+html {
+    width: 850px;
+}
+body {
+    font-family: 'Antenna Cond Regular', 'LivioNorm', Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    /*margin: 25px;*/
+    padding: 25px;
+    overflow: hidden;
+}
+
+#app {
+    /*width: $master-width;*/
+    width: inherit;
+    .app-body {
+        /*height: $master-height;*/
+        height: 1060px;
+    }
+    .status_bar{
+        height: 93px;
+    }
+    .app_settings{
+        /*margin-top: 93px;*/
+    }
+}
+
+.toggle-button {
+    margin-top: 20px;
+    width: 140px;
+    border: 1px solid color(black);
+    border-radius: 2px;
+    text-align: center;
+    padding: 10px 0;
+    float: left;
+
+    &:hover {
+        cursor: pointer;
+        background: color(black);
+        color: color(white);
+    }
+}
+
+.shutdown-button {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 140px;
+    border: 1px solid color(black);
+    border-radius: 2px;
+    text-align: center;
+    padding: 10px 0;
+    float: left;
+    &:hover {
+        cursor: pointer;
+        background: color(black);
+        color: color(white);
+    }    
+}
+
+.toggle-ptu-with-modem-button {
+    margin-top: 22px;
+    margin-left: 20px;
+    width: 210px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 10px 0;
+    float: left;
+    input{
+        margin-right: 10px;
+    }
+}
+
+.driver-distraction-button {
+    margin-top: 22px;
+    margin-left: 20px;
+    width: 210px;
+    border-radius: 2px;
+    padding: 10px 0;
+    float: left;
+    input{
+        margin-right: 10px;
+    }
+}
+
+.webengine-app-container {
+    iframe {
+        position: absolute;
+        width: $master-width;
+        height: calc(#{$master-height} - 75px);
+        top: 75px;
+        left: 0px;
+    }
+}
+
+$base-box-shadow: 0 20px 40px 0 rgba(color(black), 0.75);

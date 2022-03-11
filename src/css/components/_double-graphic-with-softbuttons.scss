@@ -1,0 +1,167 @@
+.double-graphic-with-softbuttons-template{
+    /*width: 100%;*/
+    width: 800px;
+    /*height: calc(#{$master-height} - 75px);*/
+    height: 630px;
+    /*padding: 25px;*/
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 458px;
+    z-index: 1000;
+}
+
+.double-graphic-with-softbuttons-body {
+    width: 100%;
+    height: 300px;
+    @include display(flex);
+    @include justify-content(center);
+    @include flex-direction(column);
+    @include flex(1);
+    font-family: 'Antenna Cond Regular';
+    font-size: 33px;
+}
+
+.double-graphic-with-softbuttons-body .double-graphic svg {
+    padding-right: 10px;
+    padding-left: 10px;
+    width:50%;
+    height:100%;
+    object-fit: contain;
+}
+
+.double-graphic-with-softbuttons-metadata {
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+.double-graphic-with-softbuttons-metadata .text {
+    flex: 0 0 70%;
+    padding-left: 15px;
+    //padding-top: 10px
+}
+
+.double-graphic-with-softbuttons-metadata div:nth-of-type(1) {
+    text-align: left;
+}
+
+.double-graphic-with-softbuttons-metadata .tagline {
+    text-align: left;
+    color: #969eab;
+}
+
+.double-graphic-with-softbuttons-metadata .more-soft-button {
+    flex: 0 0 15%;
+}
+
+.double-graphic-with-softbuttons-metadata .soft-buttons {
+    float: right;
+    //display: flex;
+}
+
+.double-graphic-with-softbuttons-metadata .soft-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+    width: 74px;
+    margin: 0px !important;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(61,154,255,0);
+    box-shadow: 0 4px 9px 0 rgba(0,0,0,0.45), 0 -4px 8px 0 rgba(61,154,255,0.35);
+}
+
+.double-graphic-with-softbuttons-metadata .soft-button:active {
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 -4px 9px 0 rgba(0,0,0,0.55), 0 4px 6px 0 rgba(61,154,255,0.3);
+}
+
+.double-graphic-with-softbuttons-metadata .setting {
+    float: left;
+    flex: 0 0 15%;
+}
+
+.double-graphic-with-softbuttons-top-container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.double-graphic-with-softbuttons-bottom-container{
+    height: 20%;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 15px 25px 5px rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.65);
+    height: 80px;
+    /*z-index: 1000;*/
+}
+
+ .double-graphic-with-softbuttons-template .soft-buttons {
+    width: 100%;
+    height: 100%;
+    @include display(flex);
+    @include justify-content(space-around);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include align-items(stretch);
+    flex-shrink: 0;
+    /*z-index: 1000;*/
+}
+
+.double-graphic-with-softbuttons-template .soft-button {
+    flex: 1 1 0 !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    /*margin-right: 20px;*/
+    min-width: 0;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+    border: none;
+    border-right: 1px solid rgba(68,81,111,0.6);
+}
+
+.double-graphic-with-softbuttons-template .soft-button p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+.double-graphic-with-softbuttons-metadata .soft-button .soft-button-image-static,
+.double-graphic-with-softbuttons-template .soft-button .soft-button-image-static {
+    padding: 5px;
+    max-height: 45px;
+    max-width: 45px;
+    min-width: 45px;
+}
+
+.double-graphic-with-softbuttons-template .soft-button:last-child {
+    margin-right: 0px !important;
+    border: none !important;
+}
+
+.double-graphic-with-softbuttons-metadata .soft-button .soft-button-image,
+.double-graphic-with-softbuttons-template .soft-button .soft-button-image {
+    padding: 10px;
+}
+
+.double-graphic-with-softbuttons-template .vscrollmenu {
+    width: 100%;
+    /*height: 655px;*/
+    height: 80%;
+    overflow-y: hidden;
+    padding-top: 20px;
+}

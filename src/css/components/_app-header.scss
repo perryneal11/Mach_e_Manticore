@@ -1,0 +1,99 @@
+.app_header_gradient_block{
+	  height: 482px;
+          width: 800px;
+          background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.08) 47.58%, #000000 100%, #000000 100%), radial-gradient(circle, #0C4380 0%, #0B3A6E 37.43%, #0E2E52 100%);
+	z-index: 1000;
+	position: absolute;
+	margin-bottom: -100px;
+
+}
+
+.app_tray_app_header_block{
+    height: 99px;
+    width: 150px;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    margin-left: 5px;
+    margin-right: 11px;
+
+}
+
+.t-small, .t-medium, .th-f-color {
+    margin-top: 60px;
+    margin-bottom: 200px;
+
+}
+
+
+
+.app__header div span svg {
+    width: 40px;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.app_tray_app_header_icon_text{
+    font-size: 32px;
+    height: 38px;
+    width: 150px;
+    font-family: 'Antenna Cond Regular';
+    letter-spacing: 0;
+    text-align: center; 
+}
+
+.app_tray_app_header_app_name {
+    font-size: 45px;
+}
+
+
+.app__header {
+    @include display(flex);
+    @include align-items(first baseline);
+    @include justify-content(space-between);
+    @include flex-shrink(0);
+    @include flex-direction(row);
+
+    position: relative;
+    z-index: 1000;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 75px;
+    padding: 0 25px;
+    justify-content: left;
+
+    div {
+        @include flex(1);
+        &:nth-of-type(2) {
+            text-align: center;
+        }
+
+        &:nth-of-type(3) {
+            text-align: right;
+        }
+
+    
+    }
+
+    span,
+    img {
+        display: inline-block;
+        vertical-align: top;
+        color: white
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .svg-wrap-secondary{
+        width: 30px;
+        svg{
+            width: 10px;
+            height: 10px;
+            margin-left: 5px;
+        }
+    }
+}
